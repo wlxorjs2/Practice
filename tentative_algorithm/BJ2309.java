@@ -40,7 +40,7 @@ public class Main {
             }
         }
     }
- 
+
     private static void printResult(int[] dwarf, int Liar1, int Liar2) {
         for (int i = 0; i < dwarf.length; i++) {
             if (i != Liar1 && i != Liar2) {
