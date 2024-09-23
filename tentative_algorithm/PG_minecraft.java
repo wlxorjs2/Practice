@@ -9,8 +9,6 @@ public class Main {
         };
 
         List<Integer> totalFatigue = new ArrayList<>();
-
-        // 광물 5개씩 그룹으로 나누기
         for (int i = 0; i < minerals.length; i += 5) {
             int diamondCount = 0, ironCount = 0, stoneCount = 0;
             for (int j = i; j < Math.min(i + 5, minerals.length); j++) {
@@ -23,7 +21,6 @@ public class Main {
             totalFatigue.add(stoneCount);
         }
 
-        // 곡괭이 사용 가능한 조합으로 최소 피로도 계산
         int minFatigue = Integer.MAX_VALUE;
         int[] pickCounts = new int[3];
         System.arraycopy(picks, 0, pickCounts, 0, picks.length);
