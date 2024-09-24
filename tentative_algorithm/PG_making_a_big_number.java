@@ -2,7 +2,7 @@ public class Main {
     public String solution(String number, int k) {
         StringBuilder result = new StringBuilder();
         int len = number.length();
-        int toRemove = k; // 제거할 숫자의 개수
+        int toRemove = k;
 
         for (int i = 0; i < len; i++) {
             char current = number.charAt(i);
