@@ -10,7 +10,6 @@ public class Main {
     static String answer = "\"재귀함수는 자기 자신을 호출하는 함수라네\"";
     static String end = "라고 답변하였지.";
     static int hope = 0;
-
     static void sol(int num) {
         StringBuilder hyphen = new StringBuilder();
         for(int i = 0; i < num; i++)
